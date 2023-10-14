@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The SS Photography</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Noto+Sans:ital,wght@1,300&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        color: rgb(248, 245, 245);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/camera-1130731_1920.jpg');
+
+    }
+
+    .left {
+        position: absolute;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        top: 12px;
+        left: 22px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        /* line-height: 0px; */
+
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .mid {
+        margin: 12px auto;
+        display: block;
+        width: 50%;
+        /* border: 2px solid rgb(15, 11, 11); */
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 35px;
+        right: 22px;
+        /* border: 2px solid rgb(43, 84, 24); */
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+        padding: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        color: white;
+        background-color: #404420;
+        margin: 0px 7px;
+        padding: 2px 4px;
+        border: 2px solid #404420;
+        border-radius: 20px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+
+    }
+
+    .btn:hover {
+        background-color: black;
+        text-decoration: underline;
+    }
+    .container{
+        border: 2px solid rgb(249, 250, 249);
+        border-radius: 70px;
+        margin: 90px 180px;
+        padding: 20px 50px;
+        width: 25%;
+        
+    }
+    .container h1{
+        text-align: center;
+    } 
+    .form-grp input{
+         text-align: center;
+         display: block;
+         width: 70%;
+         border: 2px solid #404420;
+         margin: 5px auto;
+         padding: 5px;
+         border-radius: 10px;
+    }
+    .container button{
+        display: block;
+        width: 75%;
+        margin: 10px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/Logo.jpg" alt="">
+            <!-- <div>Clix - IIT Bhubaneswar</div> -->
+
+        </div>
+        <!-- mid box for navigation menu -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for search buttons -->
+        <div class="right">
+            <button class="btn">Follow</button>
+            <button class="btn">Emali</button>
+
+        </div>
+    </header>
+    <div class="container">
+        
+        <h1>JOIN NOW!!</h1>
+        <form action="noaction.php">
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Age">
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Gender">
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Locality">
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Email">
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Phone no(preferably Whattsapp)">
+            </div>
+            <button class="btn">Subbmit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
